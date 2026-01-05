@@ -1,20 +1,20 @@
 {
   "success": true,
   "metadata": {
-    "title": "Responsible AI Development Policy",
+    "title": "ACME CORPORATION Responsible AI Development Policy",
     "author": "ACME Corporation",
-    "summary": "This policy (Version 2.1, effective January 1, 2025) defines mandatory requirements for development, deployment, procurement, and oversight of AI systems at ACME Corporation. It covers data governance, prohibited data sources, model development (fairness, bias testing, explainability), transparency and documentation, human oversight, third-party vendor controls, incident reporting, and compliance/enforcement.",
+    "summary": "This document is a corporate policy that establishes mandatory requirements for the development, deployment, and procurement of AI systems at ACME Corporation. It sets rules for data governance, model development (including fairness and explainability), transparency and documentation, human oversight, third‑party vendor due diligence, incident reporting, and compliance/enforcement.",
     "topics": [
-      "Data governance and privacy",
-      "Model fairness, bias testing, and explainability",
-      "Transparency, documentation, and logging",
-      "Human oversight and incident response",
-      "Third-party/vendor risk and procurement"
+      "Data governance",
+      "Fairness and bias testing",
+      "Explainability and transparency",
+      "Human oversight and override",
+      "Third‑party/vendor due diligence"
     ],
     "keywords": [
+      "responsible AI",
       "data minimization",
       "explicit consent",
-      "prohibited data sources",
       "bias testing",
       "explainability",
       "AI system registry",

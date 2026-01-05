@@ -18,7 +18,7 @@ import { Hono } from "hono";
 
 // Vercel AI SDK strukturoituja vastauksia varten
 import { openai } from "@ai-sdk/openai";
-import { generateObject } from "ai";
+import { generateText, Output } from "ai";
 
 // PDF-parsintakirjasto
 import pdf from "pdf-parse";
@@ -184,11 +184,11 @@ app.post("/extract", async (c) => {
     }
 
     // Vaihe 6: Kaytetaan OpenAI:ta analysoimaan teksti ja poimimaan strukturoitu metadata
-    // generateObject varmistaa etta vastaus vastaa Zod-schemaamme
+    // Output.object() varmistaa etta vastaus vastaa Zod-schemaamme
     console.log("Calling OpenAI...");
-    const result = await generateObject({
-      model: openai("gpt-5-mini-2025-08-07"),
-      schema: documentMetadataSchema,
+    const result = await generateText({
+      model: openai("gpt-5-mini"),
+      output: Output.object({ schema: documentMetadataSchema }),
       prompt: `Analyze the following document text and extract metadata.
 
 Document text:
@@ -196,13 +196,13 @@ Document text:
 ${extractedText.slice(0, 15000)}
 ---`,
     });
-    console.log("OpenAI response:", JSON.stringify(result.object, null, 2));
+    console.log("OpenAI response:", JSON.stringify(result.output, null, 2));
 
     // Vaihe 7: Palautetaan strukturoitu metadata
-    // Object on jo validoitu schemaamme vastaan
+    // Output on jo validoitu schemaamme vastaan
     return c.json({
       success: true,
-      metadata: result.object,
+      metadata: result.output,
       rawText: extractedText,
       stats: {
         pageCount: pdfData.numpages,
