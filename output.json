@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "metadata": {
+    "title": "Responsible AI Development Policy",
+    "author": "ACME Corporation",
+    "summary": "This policy (Version 2.1, effective January 1, 2025) defines mandatory requirements for development, deployment, procurement, and oversight of AI systems at ACME Corporation. It covers data governance, prohibited data sources, model development (fairness, bias testing, explainability), transparency and documentation, human oversight, third-party vendor controls, incident reporting, and compliance/enforcement.",
+    "topics": [
+      "Data governance and privacy",
+      "Model fairness, bias testing, and explainability",
+      "Transparency, documentation, and logging",
+      "Human oversight and incident response",
+      "Third-party/vendor risk and procurement"
+    ],
+    "keywords": [
+      "data minimization",
+      "explicit consent",
+      "prohibited data sources",
+      "bias testing",
+      "explainability",
+      "AI system registry",
+      "audit logs",
+      "human-in-the-loop",
+      "vendor due diligence",
+      "incident reporting"
+    ],
+    "documentType": "other"
+  },
+  "rawText": "\n\nACME CORPORATION\nResponsible AI Development Policy\nVersion 2.1 | Effective Date: January 1, 2025\nSECTION 1: PURPOSE AND SCOPE\nThis  policy  establishes  mandatory  requirements  for  all  AI  systems  developed,  deployed,  or  procured  by\nACME Corporation. All employees, contractors, and third-party vendors involved in AI development must\ncomply with these requirements.\nSECTION 2: DATA GOVERNANCE REQUIREMENTS\n2.1 Data Collection and Use\nAll AI systems must adhere to the following data governance principles:\n• Personal data shall only be collected with explicit user consent\n• Data minimization: collect only data necessary for the specified purpose\n• Purpose limitation: data shall not be repurposed without additional consent\n• Retention limits: personal data must be deleted after 12 months unless legally required otherwise\n• Data quality: implement validation checks to ensure accuracy and completeness\n2.2 Prohibited Data Sources\nThe following data sources are strictly prohibited for AI model training:\n• Customer data without explicit opt-in consent\n• Employee surveillance data (except where legally mandated)\n• Scraped data from websites without proper licensing\n• Any data that includes protected health information (PHI) unless HIPAA-compliant\n• Biometric data collected without specific biometric consent\nSECTION 3: MODEL DEVELOPMENT REQUIREMENTS\n3.1 Fairness and Bias Testing\nAll high-impact AI models must undergo bias testing before deployment:\n• Test for disparate impact across protected characteristics (race, gender, age, disability)\n• Document bias testing methodology and results\n• Implement mitigation strategies where bias is detected\n• Quarterly re-testing of production models\n3.2 Explainability Requirements\n\nAI systems that make decisions affecting individuals must provide:\n• Human-readable explanations for individual decisions\n• Documentation of model architecture and key features\n• Ability to trace decisions to specific data inputs\n• Regular model interpretability audits\nSECTION 4: TRANSPARENCY AND DOCUMENTATION\n4.1 AI System Registry\nAll AI systems must be registered in the central AI inventory within 30 days of development start:\n• System name and purpose\n• Data sources used\n• Model type and architecture\n• Risk classification (low, medium, high)\n• Responsible team and point of contact\n4.2 Audit Logs\nHigh-risk AI systems must maintain comprehensive audit logs:\n• All model predictions and decisions\n• Input data used for each decision\n• Timestamp and user context\n• Minimum retention period: 5 years\nSECTION 5: HUMAN OVERSIGHT REQUIREMENTS\n5.1 Human-in-the-Loop\nCritical AI decisions require human review:\n• Employment decisions (hiring, termination, promotion)\n• Credit decisions above $10,000\n• Healthcare treatment recommendations\n• Legal risk assessments\n5.2 Override Capability\nAll AI systems must include:\n• Mechanism for human operators to override AI decisions\n• Documentation requirement when override is exercised\n• Escalation path for contested AI decisions\n\nSECTION 6: THIRD-PARTY AI SYSTEMS\n6.1 Vendor Due Diligence\nBefore procuring external AI systems, teams must:\n• Conduct vendor AI responsibility assessment\n• Review vendor's data practices and privacy policy\n• Verify compliance with relevant regulations\n• Obtain contractual guarantees regarding data use and model behavior\n6.2 API and Model Risks\nWhen using third-party AI APIs or foundation models:\n• Conduct monthly monitoring for model drift or degradation\n• Implement fallback systems for API failures\n• Review vendor security certifications annually\n• Prohibit sending sensitive data to external APIs without encryption and approval\nSECTION 7: INCIDENT RESPONSE\n7.1 AI Incident Definition\nAn AI incident includes:\n• Discriminatory outcomes detected in production\n• Privacy breach involving AI system data\n• Significant model performance degradation\n• Unintended harmful outputs or behaviors\n7.2 Reporting Requirements\nAll AI incidents must be reported within 24 hours to:\n• AI Ethics Committee\n• Legal Department\n• Data Protection Officer\n• Affected business unit leadership\nSECTION 8: COMPLIANCE AND ENFORCEMENT\nViolation of this policy may result in:\n• Mandatory retraining\n• Project suspension or termination\n• Disciplinary action up to and including termination\n• Potential legal liability\n\nThis policy will be reviewed and updated annually or as regulatory requirements evolve.",
+  "stats": {
+    "pageCount": 4,
+    "textLength": 4409
+  }
+}
